@@ -36,9 +36,9 @@ This plugin could be considered the 'alter ego' of maven apt plugin http://mojo.
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <maven.release>3.1.0</maven.release>
       <!-- SONATYPE REPO -->
-      <snapshot.repo.id>sonatype-repo</snapshot.repo.id>
+      <snapshot.repo.id>ossrh</snapshot.repo.id>
       <snapshot.repo.url>https://oss.sonatype.org/content/repositories/snapshots</snapshot.repo.url>
-      <release.repo.id>sonatype-repo</release.repo.id>
+      <release.repo.id>ossrh</release.repo.id>
       <release.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2</release.repo.url>
   </properties>
 
@@ -289,9 +289,10 @@ This plugin could be considered the 'alter ego' of maven apt plugin http://mojo.
                   <version>1.5.1</version>
                   <extensions>true</extensions>
                   <configuration>
-                    <serverId>sonatype-server</serverId>
+                    <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <stagingProfileId />
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
                   </configuration>
                 </plugin>
 

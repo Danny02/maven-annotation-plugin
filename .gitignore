@@ -1,10 +1,2 @@
 .idea/
-
-.classpath
-.project
-.settings/
-.vscode/
-*.sh
 target/
-issue47.txt
-maven-compiler-plugin/
