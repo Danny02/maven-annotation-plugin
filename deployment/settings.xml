@@ -15,7 +15,7 @@
 			<id>ossrh</id>
 			<properties>
 				<gpg.executable>gpg2</gpg.executable>
-				<gpg.keyname>F03D9C07CE2BE203A33FE37CED2F817973A6B664</gpg.keyname>
+				<gpg.keyname>349213B587BBC679A5205117425DA3EF3FD4B149</gpg.keyname>
 				<gpg.passphrase>${env.PASSPHRASE}</gpg.passphrase>
 				<gpg.secretKeyring>${env.TRAVIS_BUILD_DIR}/secring.gpg</gpg.secretKeyring>
 				<gpg.publicKeyring>${env.TRAVIS_BUILD_DIR}/pubring.gpg</gpg.publicKeyring>
